@@ -69,7 +69,7 @@ fn get_bios_sn() -> String {
         .trim()
         .to_string();
 
-    if !cleaned_output.is_empty() {
+    if cleaned_output.is_empty() {
         println!(
             "Número de série não encontrado!\nPor favor, digite o numero de série que será gravado no arquivo de informações."
         );
