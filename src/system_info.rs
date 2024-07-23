@@ -2,6 +2,7 @@ use crate::{user_interaction, utils};
 use std::process::{Command, Output};
 use sysinfo::{Components, Disks, Networks, System};
 
+#[derive(Clone)]
 pub struct SystemInfo {
     pub name: String,
     pub kernel_version: String,
